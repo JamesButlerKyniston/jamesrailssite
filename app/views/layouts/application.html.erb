@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- This makes the website fit to the screen. Makes it work well with phones, tablets, resized windows, etc. -->
+
+<html>
+
+
+  <head>
+
+
+    <title>Workspace</title>
+  
+  
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <!-- This gets and applies the stylesheet for whatever page you're on as found in app/assets/stylesheets -->
+  
+  
+      <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+      <!-- This gets and applies the javascript for the site you're on as found in app/assets/javascripts -->
+      <!-- Coffee scripts also are turned to java script and applied here.-->
+  
+  
+      <%= csrf_meta_tags %>
+      <!-- I don't know what all this does but yield doesn't work without it.-->
+  
+  </head>
+<body>
+
+
+<%= yield %>
+<!-- This gets the main body for whatever page you're on. -->
+
+
+
+</body>
+</html>
